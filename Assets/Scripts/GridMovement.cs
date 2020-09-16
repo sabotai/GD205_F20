@@ -52,10 +52,17 @@ public class GridMovement : MonoBehaviour
 
 
       controls();
+
+      //doing it like this will only create the trail in the old position once you move
+      //if (newPosition != playerTransform.position){ //if its a new position
+      //  createTrail(); //create the trail in the old position before updating to the new position
+      //}
+      
       updatePosition();
       checkHazards();
-      createTrail();
 
+      //doing it like this will create the trail in the current position regardless of whether its already changed
+      createTrail(); 
 
     }
 
@@ -136,7 +143,11 @@ public class GridMovement : MonoBehaviour
           //then access its gameobject, 
           //then access the renderer component,
           //then access the material and change it to trailMat
-          fieldParent.GetChild(i).gameObject.GetComponent<Renderer>().material = trailMat;
+          //fieldParent.GetChild(i).gameObject.GetComponent<Renderer>().material = trailMat;
+
+          //example of changing the color instead. make the materials color a little bit more red and a little bit more opaque while in the spot
+          fieldParent.GetChild(i).gameObject.GetComponent<Renderer>().material.color = Color.red;//new Color(0.01f, 0.00f, 0.00f, 0.01f);
+
         }
 
       }
