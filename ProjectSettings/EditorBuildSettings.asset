@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Week4_Trail.unity
+    guid: 001a617e9c217e640beea0a5c16b8611
   m_configObjects: {}
