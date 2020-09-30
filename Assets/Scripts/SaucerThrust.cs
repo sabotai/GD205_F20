@@ -42,10 +42,16 @@ public class SaucerThrust : MonoBehaviour
   		if (Input.GetKey(KeyCode.Q)){
         	rb.AddForce(dwn * thrustAmt);
   		}
+      if (Input.GetKey(KeyCode.Space)){
+        rb.velocity *= 0.95f;
+
+      }
+
     }
 
     void OnCollisionEnter(Collision myCol){ //this runs whenever a collision with this gameobject happens
     	Debug.Log("OOPSY! You hit " + myCol.gameObject.name); //run this console message telling us the name of the gameObject in the collision (report)
     	//Destroy(myCol.gameObject); //this will destroy the gameobject that you hit
+      GetComponent<ParticleSystem>().Play();
     }
 }
