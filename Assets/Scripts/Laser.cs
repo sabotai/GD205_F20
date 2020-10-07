@@ -26,6 +26,11 @@ public class Laser : MonoBehaviour
         		hit.rigidbody.AddExplosionForce(laserPwr, hit.point, 10f, 0.75f);
 
         	}
+
+
+        	if (hit.transform.gameObject.GetComponent<AudioSource>()){
+        		hit.transform.gameObject.GetComponent<AudioSource>().Play();
+        	}
         }
     }
 }
