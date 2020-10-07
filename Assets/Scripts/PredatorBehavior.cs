@@ -23,7 +23,7 @@ public class PredatorBehavior : MonoBehaviour
         
 
         if (Vector3.Distance(prey.position, transform.position) < proximityAlert){
-        	Vector3 preyDir = Vector3.Normalize(prey.position - transform.position); //direction
+        	Vector3 preyDir = Vector3.Normalize(transform.position - prey.position); //direction
         	predRB.AddForce(preyDir * forceAmt);
         
         }
