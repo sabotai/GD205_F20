@@ -7749,7 +7749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayText: {fileID: 864168418}
-  resetTime: 60
+  resetTime: 10
 --- !u!114 &619411423
 MonoBehaviour:
   m_ObjectHideFlags: 0
