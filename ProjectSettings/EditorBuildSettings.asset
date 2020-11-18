@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Week7_Raycasting.unity
     guid: 92bec4e2228e7524e9275d9536cd1a93
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Week9_ProbuilderAndNavMesh.unity
     guid: 7447945d248c4834db7d7135cdc08243
+  - enabled: 1
+    path: Assets/Scenes/Week12_Inventory.unity
+    guid: a252f47838481c2418693bd53938411b
   m_configObjects: {}

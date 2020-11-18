@@ -20,6 +20,8 @@ public class EnemyAgent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(Inventory.collectiblesCollected);
+
         if (isPatrolling){
             if (enemy.remainingDistance < destThresh){
                 Debug.Log("updating patrol position...");
